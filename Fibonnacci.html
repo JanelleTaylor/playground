@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>SDET | Fibonnacci</title>
+</head>
+<body>
+    <h1>
+        Fibonnacci Test
+    </h1>
+    <div>
+        Look at the below code snippet and output to see if you see any errors
+    </div>
+    <div>
+        <pre>
+            <code>
+                //Array containing the1st 2 numbers in the fibonnacci series 
+                def a = [0,1]
+
+                //Creating variable 
+                int num1, num2, sum;
+
+                //Creating a loop until we get the first ten numbers in the fibonnacci series
+                for (int i = 2; i <=10; i++){
+                    
+                    num1 = i - 2;
+                    num2 = i - 1;
+                    sum = a.get(num1) + a.get(num2);
+                    a.add(sum); 
+                }
+                println("The first 10 numbers in the fibonnacci series are " + a)
+            </code>
+            <samp>
+                The first 10 numbers in the fibonnacci series are [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+            </samp>
+        </pre>
+        
+    </div>
+</body>
